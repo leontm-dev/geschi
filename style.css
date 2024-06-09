@@ -38,8 +38,7 @@ section {
 }
 .picture {
   width: 350px;
-  border: #4c2f26 solid 5px;
-  box-shadow: #4c2f26 2px 2px 2px 2px;
+  border: #4c2f26 solid 7px;
   min-height: 100px;
   display: flex;
   justify-content: center;
@@ -59,7 +58,7 @@ section {
   font-size: 20px;
   text-align: center;
   border-radius: 5px;
-  border: #4c2f26 solid 1px;
+  border: #4c2f26 solid 3px;
   background-color: white;
   padding: 10px;
   max-width: 200px;
