@@ -62,4 +62,6 @@ section {
   border: #4c2f26 solid 1px;
   background-color: white;
   padding: 10px;
+  max-width: 200px;
+  text-wrap: wrap;
 }
