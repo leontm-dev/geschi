@@ -64,3 +64,9 @@ section {
   max-width: 200px;
   text-wrap: wrap;
 }
+
+/* Important */
+
+.show {
+  display: flex;
+}
