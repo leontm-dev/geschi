@@ -1,0 +1,61 @@
+/* Imports */
+
+/* Main */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Section */
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #617e94;
+  width: 100vw;
+  position: relative;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.content {
+  display: none;
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  background-color: white;
+}
+.picture {
+  width: 300px;
+  height: 300px;
+  border: 20px solid transparent;
+  border-image: linear-gradient(
+      to bottom,
+      #ffd700,
+      #ffc700,
+      #ffb700,
+      #ffa700,
+      #ff9700
+    )
+    1;
+  box-shadow: 0 0 0 10px rgba(255, 215, 0, 0.8),
+    inset 0 0 10px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(255, 255, 255, 0.6);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  color: #444;
+}
