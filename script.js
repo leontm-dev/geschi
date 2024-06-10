@@ -1,18 +1,3 @@
-document.getElementById("picture-merten").addEventListener("click", (ev) => {
-  document.getElementById("content-merten").style.display = "flex";
-});
-document.getElementById("picture-maarten").addEventListener("click", (ev) => {
-  document.getElementById("content-maarten").style.display = "flex";
-});
-document.getElementById("picture-leon").addEventListener("click", (ev) => {
-  document.getElementById("content-leon").style.display = "flex";
-});
-document.getElementById("picture-robin").addEventListener("click", (ev) => {
-  document.getElementById("content-robin").style.display = "flex";
-});
-document.getElementById("picture-fazit").addEventListener("click", (ev) => {
-  document.getElementById("content-fazit").style.display = "flex";
-});
 function openContent(content) {
   switch (content) {
     case "merten":
