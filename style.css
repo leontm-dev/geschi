@@ -36,6 +36,61 @@ section {
   left: 5%;
   background-color: white;
   z-index: 100;
+  justify-content: center;
+}
+.content-top {
+  width: 90%;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.content-title {
+  width: 80%;
+  text-wrap: wrap;
+  font-size: 20px;
+  font-weight: 500;
+}
+.content-close {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+.content-close:hover {
+  cursor: pointer;
+}
+.content-section {
+  width: 90%;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-text {
+  display: flex;
+  flex-direction: column;
+  > h1 {
+    font-size: 17.5px;
+    font-weight: 600;
+  }
+  > p {
+    font-size: 15px;
+  }
+}
+.section-img {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .picture {
   width: 350px;
