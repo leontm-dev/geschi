@@ -27,6 +27,9 @@ function openContent(content) {
     case "leon":
       document.getElementById("content-leon").style.display = "flex";
       break;
+    case "fazit":
+      document.getElementById("content-fazit").style.display = "flex";
+      break;
     default:
       break;
   }
@@ -45,6 +48,9 @@ function closeContent(content) {
       break;
     case "leon":
       document.getElementById("content-leon").style.display = "none";
+      break;
+    case "fazit":
+      document.getElementById("content-fazit").style.display = "none";
       break;
     default:
       break;
