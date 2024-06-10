@@ -1,3 +1,10 @@
+document.getElementById("picture-merten").addEventListener("click", (ev) => {
+  document.getElementById("content-merten").style.display = "flex";
+});
+document.getElementById("picture-maarten").addEventListener("click", (ev) => {
+  document.getElementById("content-maarten").style.display = "flex";
+});
+document.getR;
 function openContent(content) {
   switch (content) {
     case "merten":
