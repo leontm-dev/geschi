@@ -96,6 +96,9 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  > img {
+    width: 80%;
+  }
 }
 .picture {
   width: 350px;
