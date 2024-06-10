@@ -1,16 +1,16 @@
 function openContent(content) {
   switch (content) {
     case "merten":
-      document.getElementById(`content-${content}`).classList.add("show");
+      document.getElementById(`content-${content}`).style.display = "flex";
       break;
     case "maarten":
-      document.getElementById("content-maarten").classList.add("show");
+      document.getElementById("content-maarten").style.display = "flex";
       break;
     case "robin":
-      document.getElementById("content-robin").classList.add("show");
+      document.getElementById("content-robin").style.display = "flex";
       break;
     case "leon":
-      document.getElementById("content-leon").classList.add("show");
+      document.getElementById("content-leon").style.display = "flex";
       break;
     default:
       break;
@@ -20,16 +20,16 @@ function openContent(content) {
 function closeContent(content) {
   switch (content) {
     case "merten":
-      document.getElementById("content-merten").classList.remove("show");
+      document.getElementById("content-merten").style.display = "none";
       break;
     case "maarten":
-      document.getElementById("content-maarten").classList.remove("show");
+      document.getElementById("content-maarten").style.display = "none";
       break;
     case "robin":
-      document.getElementById("content-robin").classList.remove("show");
+      document.getElementById("content-robin").style.display = "none";
       break;
     case "leon":
-      document.getElementById("content-leon").classList.remove("show");
+      document.getElementById("content-leon").style.display = "none";
       break;
     default:
       break;
