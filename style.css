@@ -29,6 +29,7 @@ section {
 }
 .content {
   display: flex;
+  flex-direction: column;
   width: 90%;
   height: 90%;
   position: absolute;
@@ -37,9 +38,7 @@ section {
   background-color: white;
   z-index: 100;
   border-radius: 10px;
-  box-shadow: black 1px 1px 1px 0.5px;
   justify-content: center;
-  flex-direction: column;
 }
 .content-top {
   width: 90%;
