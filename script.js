@@ -13,7 +13,6 @@ document.getElementById("picture-robin").addEventListener("click", (ev) => {
 document.getElementById("picture-fazit").addEventListener("click", (ev) => {
   document.getElementById("content-fazit").style.display = "flex";
 });
-
 function openContent(content) {
   switch (content) {
     case "merten":
