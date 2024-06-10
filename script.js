@@ -1,44 +1,38 @@
+let scrolling = true;
+
 function openContent(content) {
-  switch (content) {
-    case "merten":
-      document.getElementById(`content-${content}`).style.display = "flex";
-      break;
-    case "maarten":
-      document.getElementById("content-maarten").style.display = "flex";
-      break;
-    case "robin":
-      document.getElementById("content-robin").style.display = "flex";
-      break;
-    case "leon":
-      document.getElementById("content-leon").style.display = "flex";
-      break;
-    case "fazit":
-      document.getElementById("content-fazit").style.display = "flex";
-      break;
-    default:
-      break;
-  }
-  return;
+  let element = document.getElementById("content-" + content);
+  let frame = document.getElementById("picture-" + content).parentElement;
+  if (element == null) return;
+  if (frame == null) return;
+
+  element.style.display = "flex";
+  element.classList.remove("goIn");
+  element.classList.add("goOut");
+  scrolling = false;
+  window.scroll(frame.offsetLeft, frame.offsetTop);
 }
 function closeContent(content) {
-  switch (content) {
-    case "merten":
-      document.getElementById("content-merten").style.display = "none";
-      break;
-    case "maarten":
-      document.getElementById("content-maarten").style.display = "none";
-      break;
-    case "robin":
-      document.getElementById("content-robin").style.display = "none";
-      break;
-    case "leon":
-      document.getElementById("content-leon").style.display = "none";
-      break;
-    case "fazit":
-      document.getElementById("content-fazit").style.display = "none";
-      break;
-    default:
-      break;
-  }
-  return;
+  let element = document.getElementById("content-" + content);
+  if (element == null) return;
+
+  element.style.display = "flex";
+  element.classList.remove("goOut");
+  element.style.content = "none";
+  scrolling = true;
+  element.classList.add("goIn");
+  setTimeout(() => {
+    element.style.display = "none";
+  }, 501);
 }
+
+window.addEventListener(
+  "wheel",
+  (e) => {
+    if (scrolling) {
+      window.scroll(window.scrollX + e.deltaY, window.scrollY);
+    }
+    e.preventDefault();
+  },
+  { passive: false }
+);
