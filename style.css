@@ -28,13 +28,14 @@ section {
   flex-direction: column;
 }
 .content {
-  display: none;
+  display: flex;
   width: 90%;
   height: 90%;
   position: absolute;
   top: 5%;
   left: 5%;
   background-color: white;
+  z-index: 100;
 }
 .picture {
   width: 350px;
