@@ -30,9 +30,17 @@ function closeContent(content) {
 function moveSlider(direction) {
   let element = document.getElementById("picture-leon").parentElement;
   if (direction === "rechts") {
-    sliderIndex++;
+    if (sliderIndex < 4) {
+      sliderIndex++;
+    } else {
+      document.getElementById("control-right").disabled = true;
+    }
   } else if (direction === "links") {
-    sliderIndex--;
+    if (sliderIndex > 0) {
+      sliderIndex--;
+    } else {
+      document.getElementById("control-left").disabled = true;
+    }
   }
   if (sliderIndex === 0) {
     document.getElementById("control-left").disabled = true;
@@ -49,6 +57,7 @@ function moveSlider(direction) {
     left: element.offsetWidth * sliderIndex,
     top: element.offsetTop,
   });
+  console.log(sliderIndex);
 }
 
 window.addEventListener(
