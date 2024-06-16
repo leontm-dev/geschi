@@ -1,4 +1,5 @@
 let scrolling = true;
+let sliderIndex = 0;
 
 function openContent(content) {
   let element = document.getElementById("content-" + content);
@@ -24,6 +25,30 @@ function closeContent(content) {
   setTimeout(() => {
     element.style.display = "none";
   }, 501);
+}
+
+function moveSlider(direction) {
+  let element = document.getElementById("picture-leon").parentElement;
+  if (direction === "rechts") {
+    sliderIndex++;
+  } else if (direction === "links") {
+    sliderIndex--;
+  }
+  if (sliderIndex === 0) {
+    document.getElementById("control-left").disabled = true;
+    document.getElementById("control-right").disabled = false;
+  } else if (sliderIndex === 4) {
+    document.getElementById("control-left").disabled = false;
+    document.getElementById("control-right").disabled = true;
+  } else {
+    document.getElementById("control-left").disabled = false;
+    document.getElementById("control-right").disabled = false;
+  }
+  window.scrollTo({
+    behavior: "smooth",
+    left: element.offsetWidth * sliderIndex,
+    top: element.offsetTop,
+  });
 }
 
 window.addEventListener(
