@@ -12,6 +12,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
   background-color: #4c2f26;
