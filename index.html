@@ -5,9 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kolumbus | Held oder Verbrecher</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="controls.css" />
     <script src="script.js"></script>
   </head>
   <body>
+    <div class="controls">
+      <button class="control" id="control-left">
+        <div class="control-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-left-short"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"
+            />
+          </svg>
+        </div>
+        <div class="control-title">Links</div>
+      </button>
+      <div class="controls-text">
+        <div class="controls-title">Kolumbus, Held oder Verbrecher</div>
+        <div class="controls-subtitle">Ein Museumsrundgang</div>
+      </div>
+      <button class="control" id="control-right">
+        <div class="control-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-right-short"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+            />
+          </svg>
+        </div>
+        <div class="control-title">Rechts</div>
+      </button>
+    </div>
     <section>
       <div class="picture" id="picture-merten" onclick="openContent('merten')">
         <img src="images/merten/front.jpg" alt="Merten" />
@@ -31,38 +74,40 @@
             </svg>
           </div>
         </div>
-        <div class="content-section">
-          <div class="section-img">
-            <img src="images/merten/front.jpg" alt="" />
-          </div>
-          <div class="section-text">
-            <p>
-              Christoph Kolumbus war ein italienischer Seefahrer, der in
-              kastilischen Diensten stand. Seine Hauptintention auf den Fahrten
-              nach Amerika war es, einen westlichen Seeweg nach Indien zu
-              finden. Er war überzeugt, dass die Erde kleiner und Asien größer
-              sei, als sie tatsächlich sind, und dass er durch Segeln nach
-              Westen direkt nach Asien gelangen könnte. Die Hintergründe seiner
-              Reisen waren sowohl wirtschaftlicher als auch explorativer Natur.
-              Im späten 15. Jahrhundert war der Handel zwischen Europa und Asien
-              sehr lukrativ, besonders wegen der exotischen Waren wie Gold,
-              Silber, Seide und Gewürze. Nach der Eroberung Konstantinopels
-              durch die Osmanen im Jahr 1453 suchten die Europäer neue
-              Handelswege nach Asien, da der traditionelle Landweg nun
-              schwieriger zu nutzen war. Kolumbus’ erste Reise im Jahr 1492
-              führte zur Entdeckung einer Insel der Bahamas und dann weiterer
-              Karibikinseln. Er glaubte, Indien erreicht zu haben, und erkannte
-              nicht, dass es sich um einen neuen Kontinent handelte. Diese
-              Auffassung vertrat erst Amerigo Vespucci, nach dem die Neue Welt
-              schließlich Amerika genannt wurde. Auf seinen vier
-              Entdeckungsreisen zwischen 1492 und 1504 steuerte Kolumbus vor
-              allem die Großen Antillen an und gründete erste Kolonien auf
-              Hispaniola. Erst auf seiner vierten Reise betrat er im heutigen
-              Honduras amerikanisches Festland. Trotz der Missverständnisse und
-              Irrtümer gilt Kolumbus bis heute als maßgeblicher europäischer
-              Entdecker Amerikas, da seine Reisen zu dauerhafter Kolonisierung
-              führten.
-            </p>
+        <div class="contents">
+          <div class="content-section">
+            <div class="section-img">
+              <img src="images/merten/front.jpg" alt="" />
+            </div>
+            <div class="section-text">
+              <p>
+                Christoph Kolumbus war ein italienischer Seefahrer, der in
+                kastilischen Diensten stand. Seine Hauptintention auf den
+                Fahrten nach Amerika war es, einen westlichen Seeweg nach Indien
+                zu finden. Er war überzeugt, dass die Erde kleiner und Asien
+                größer sei, als sie tatsächlich sind, und dass er durch Segeln
+                nach Westen direkt nach Asien gelangen könnte. Die Hintergründe
+                seiner Reisen waren sowohl wirtschaftlicher als auch
+                explorativer Natur. Im späten 15. Jahrhundert war der Handel
+                zwischen Europa und Asien sehr lukrativ, besonders wegen der
+                exotischen Waren wie Gold, Silber, Seide und Gewürze. Nach der
+                Eroberung Konstantinopels durch die Osmanen im Jahr 1453 suchten
+                die Europäer neue Handelswege nach Asien, da der traditionelle
+                Landweg nun schwieriger zu nutzen war. Kolumbus’ erste Reise im
+                Jahr 1492 führte zur Entdeckung einer Insel der Bahamas und dann
+                weiterer Karibikinseln. Er glaubte, Indien erreicht zu haben,
+                und erkannte nicht, dass es sich um einen neuen Kontinent
+                handelte. Diese Auffassung vertrat erst Amerigo Vespucci, nach
+                dem die Neue Welt schließlich Amerika genannt wurde. Auf seinen
+                vier Entdeckungsreisen zwischen 1492 und 1504 steuerte Kolumbus
+                vor allem die Großen Antillen an und gründete erste Kolonien auf
+                Hispaniola. Erst auf seiner vierten Reise betrat er im heutigen
+                Honduras amerikanisches Festland. Trotz der Missverständnisse
+                und Irrtümer gilt Kolumbus bis heute als maßgeblicher
+                europäischer Entdecker Amerikas, da seine Reisen zu dauerhafter
+                Kolonisierung führten.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -94,47 +139,49 @@
             </svg>
           </div>
         </div>
-        <div class="content-section">
-          <div class="section-img">
-            <img src="images/maarten/1.jpg" />
-          </div>
-          <div class="section-text">
-            <h1>Das Bordbuch von Kolumbus</h1>
-            <p>
-              • will unter Augenzeugen von der Insel Guanahani Besitz ergreifen
-              => feindliche Vorsätze <br />
-              => Indigene Bevölkerung fühlt sich in ihrem Territorium bedroht,
-              indigene Bevölkerung soll christianisiert werden <br />
-              => feindliche Vorsätze, Kolumbus will sich indigene Bevölkerung zu
-              Freunden machen <br />
-              => schenkt ihnen rote Kappen und Halsketten aus Glas und noch
-              andere Kleinigkeiten von geringem Wert > Indigene freuen sich, man
-              könnte es allerdings auch als abfällige Handlung darstellen, da
-              Gaben nur sehr geringen Wert haben > Indigene tauschen Waren mit
-              den Conquistadores Eindruck von Kolumbus: <br />> indigene leiden
-              einen Mange, an allem <br />
-              => Ausnutzen > „Menschen sind sehr jung, gut gewachsen und haben
-              schön geformte Körper" > niemand älter als 30 Jahre alt, zeigt
-              indigenen seine Waffen
-            </p>
+        <div class="contents">
+          <div class="content-section">
+            <div class="section-img">
+              <img src="images/maarten/1.jpg" />
+            </div>
+            <div class="section-text">
+              <h1>Das Bordbuch von Kolumbus</h1>
+              <p>
+                • will unter Augenzeugen von der Insel Guanahani Besitz
+                ergreifen => feindliche Vorsätze <br />
+                => Indigene Bevölkerung fühlt sich in ihrem Territorium bedroht,
+                indigene Bevölkerung soll christianisiert werden <br />
+                => feindliche Vorsätze, Kolumbus will sich indigene Bevölkerung
+                zu Freunden machen <br />
+                => schenkt ihnen rote Kappen und Halsketten aus Glas und noch
+                andere Kleinigkeiten von geringem Wert > Indigene freuen sich,
+                man könnte es allerdings auch als abfällige Handlung darstellen,
+                da Gaben nur sehr geringen Wert haben > Indigene tauschen Waren
+                mit den Conquistadores Eindruck von Kolumbus: <br />> indigene
+                leiden einen Mange, an allem <br />
+                => Ausnutzen > „Menschen sind sehr jung, gut gewachsen und haben
+                schön geformte Körper" > niemand älter als 30 Jahre alt, zeigt
+                indigenen seine Waffen
+              </p>
 
-            <h1>Encomienda</h1>
-            <br />
-            - System: <br />
-            • indigene Bevölkerung soll unter Menschenwürdigen Zuständen
-            arbeiten <br />
-            => tiefere Bedeutung soll in der Christianisierung liegen,
-            individuell festgesetzte Tageslöhne <br />
-            => sehr großer Handlungsspielraum/ Interpretaionsspielraum ,„keine
-            Sklaven"
-            <h1>Fazit</h1>
-            :
-            <br />
-            <p>
-              durch große Handlungs-/ Interpretationsspielräume findet Sklaverei
-              und Ausbeutung genau wie vorher statt, nur unter einem anderen
-              Deckmantel
-            </p>
+              <h1>Encomienda</h1>
+              <br />
+              - System: <br />
+              • indigene Bevölkerung soll unter Menschenwürdigen Zuständen
+              arbeiten <br />
+              => tiefere Bedeutung soll in der Christianisierung liegen,
+              individuell festgesetzte Tageslöhne <br />
+              => sehr großer Handlungsspielraum/ Interpretaionsspielraum ,„keine
+              Sklaven"
+              <h1>Fazit</h1>
+              :
+              <br />
+              <p>
+                durch große Handlungs-/ Interpretationsspielräume findet
+                Sklaverei und Ausbeutung genau wie vorher statt, nur unter einem
+                anderen Deckmantel
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -162,23 +209,25 @@
             </svg>
           </div>
         </div>
-        <div class="content-section">
-          <div class="section-img">
-            <img src="images/leon/2.jpg" />
-          </div>
-          <div class="section-text">
-            <p>
-              Hernán Cortés führte 1519 die Eroberung des Aztekenreichs an und
-              eroberte 1521 Tenochtitlan. Diese Eroberung führte zu massiven
-              Bevölkerungsverlusten durch eingeschleppte Krankheiten, Hunger und
-              Gewalt. Die Einführung des Encomienda-Systems führte zur
-              Ausbeutung und Versklavung der indigenen Bevölkerung. Zudem
-              zerstörten die Spanier viele indigene Traditionen durch erzwungene
-              Christianisierung und kulturelle Dominanz. Die Plünderung der
-              Reichtümer und die Ausbeutung von Bodenschätzen prägten die
-              Wirtschaft nachhaltig und hinterließen ein Erbe der Ungleichheit
-              und Marginalisierung.
-            </p>
+        <div class="contents">
+          <div class="content-section">
+            <div class="section-img">
+              <img src="images/leon/2.jpg" />
+            </div>
+            <div class="section-text">
+              <p>
+                Hernán Cortés führte 1519 die Eroberung des Aztekenreichs an und
+                eroberte 1521 Tenochtitlan. Diese Eroberung führte zu massiven
+                Bevölkerungsverlusten durch eingeschleppte Krankheiten, Hunger
+                und Gewalt. Die Einführung des Encomienda-Systems führte zur
+                Ausbeutung und Versklavung der indigenen Bevölkerung. Zudem
+                zerstörten die Spanier viele indigene Traditionen durch
+                erzwungene Christianisierung und kulturelle Dominanz. Die
+                Plünderung der Reichtümer und die Ausbeutung von Bodenschätzen
+                prägten die Wirtschaft nachhaltig und hinterließen ein Erbe der
+                Ungleichheit und Marginalisierung.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -206,71 +255,76 @@
             </svg>
           </div>
         </div>
-        <div class="content-section">
-          <div class="section-img"><img src="images/robin/1.jpg" alt="" /></div>
-          <div class="section-text">
-            <h1>1. Kolonialismus und Handelsrouten</h1>
-            <p>
-              Die Entdeckung führte zur Errichtung von Kolonien in der Neuen
-              Welt, was den europäischen Mächten Zugang zu neuen Ressourcen wie
-              Gold, Silber und landwirtschaftlichen Produkten wie Zucker, Tabak
-              und Baumwolle verschaffte.
-            </p>
-            <h1>2. Dreieckshandel</h1>
-            <p>
-              Es entstand der transatlantische Dreieckshandel, der den Austausch
-              von Waren und Sklaven zwischen Europa, Afrika und Amerika
-              umfasste. Dieser Handel führte zu immensem Reichtum für
-              europäische Nationen.
-            </p>
+        <div class="contents">
+          <div class="content-section">
+            <div class="section-img">
+              <img src="images/robin/1.jpg" alt="" />
+            </div>
+            <div class="section-text">
+              <h1>1. Kolonialismus und Handelsrouten</h1>
+              <p>
+                Die Entdeckung führte zur Errichtung von Kolonien in der Neuen
+                Welt, was den europäischen Mächten Zugang zu neuen Ressourcen
+                wie Gold, Silber und landwirtschaftlichen Produkten wie Zucker,
+                Tabak und Baumwolle verschaffte.
+              </p>
+              <h1>2. Dreieckshandel</h1>
+              <p>
+                Es entstand der transatlantische Dreieckshandel, der den
+                Austausch von Waren und Sklaven zwischen Europa, Afrika und
+                Amerika umfasste. Dieser Handel führte zu immensem Reichtum für
+                europäische Nationen.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="content-section">
-          <div class="section-text">
-            <h1>1. Machtverschiebung</h1>
-            <p>
-              Spanien und Portugal, die führenden Nationen bei der Entdeckung
-              und Kolonialisierung Amerikas, erlangten große Macht und Einfluss.
-              Später traten auch andere Nationen wie Frankreich, England und die
-              Niederlande in den kolonialen Wettstreit ein.
-            </p>
-            <h1>2. Imperialismus</h1>
-            <p>
-              Der Wettlauf um die Kolonien und deren Reichtümer führte zu
-              politischen Spannungen und Konflikten zwischen den europäischen
-              Mächten, was langfristig zur Entstehung des Imperialismus beitrug.
-            </p>
+          <div class="content-section">
+            <div class="section-text">
+              <h1>1. Machtverschiebung</h1>
+              <p>
+                Spanien und Portugal, die führenden Nationen bei der Entdeckung
+                und Kolonialisierung Amerikas, erlangten große Macht und
+                Einfluss. Später traten auch andere Nationen wie Frankreich,
+                England und die Niederlande in den kolonialen Wettstreit ein.
+              </p>
+              <h1>2. Imperialismus</h1>
+              <p>
+                Der Wettlauf um die Kolonien und deren Reichtümer führte zu
+                politischen Spannungen und Konflikten zwischen den europäischen
+                Mächten, was langfristig zur Entstehung des Imperialismus
+                beitrug.
+              </p>
+            </div>
+            <div class="section-img">
+              <img src="images/robin/2.jpg" alt="" />
+            </div>
           </div>
-          <div class="section-img">
-            <img src="images/robin/2.jpg" alt="" />
-          </div>
-        </div>
-        <div class="content-section">
-          <div class="section-img">
-            <img src="images/robin/3.jpg" alt="" />
-          </div>
-          <div class="section-text">
-            <p>Kulturelle Veränderungen</p>
-            <h1>1. Wissen und Bildung</h1>
-            <p>
-              Die Entdeckung neuer Landmassen führte zu einem Interesse an
-              Geografie und der Förderung wissenschaftlicher Forschung. Karten
-              und Atlanten wurden aktualisiert und erweitert.
-            </p>
-            <h1>2. Religion</h1>
-            <p>
-              Die katholische Kirche spielte eine zentrale Rolle bei der
-              Missionierung der indigenen Völker in Amerika, was auch zu
-              Konflikten und Diskussionen über die ethischen und moralischen
-              Aspekte des Kolonialismus führte.
-            </p>
-            <h1>3. Kultureller Austausch</h1>
-            <p>
-              Der Austausch von Kultur, Technologie und Wissen zwischen den
-              Kontinenten nahm zu. Europäische Kunst, Literatur und Wissenschaft
-              wurden durch die Begegnung mit neuen Kulturen und Ideen
-              beeinflusst.
-            </p>
+          <div class="content-section">
+            <div class="section-img">
+              <img src="images/robin/3.jpg" alt="" />
+            </div>
+            <div class="section-text">
+              <p>Kulturelle Veränderungen</p>
+              <h1>1. Wissen und Bildung</h1>
+              <p>
+                Die Entdeckung neuer Landmassen führte zu einem Interesse an
+                Geografie und der Förderung wissenschaftlicher Forschung. Karten
+                und Atlanten wurden aktualisiert und erweitert.
+              </p>
+              <h1>2. Religion</h1>
+              <p>
+                Die katholische Kirche spielte eine zentrale Rolle bei der
+                Missionierung der indigenen Völker in Amerika, was auch zu
+                Konflikten und Diskussionen über die ethischen und moralischen
+                Aspekte des Kolonialismus führte.
+              </p>
+              <h1>3. Kultureller Austausch</h1>
+              <p>
+                Der Austausch von Kultur, Technologie und Wissen zwischen den
+                Kontinenten nahm zu. Europäische Kunst, Literatur und
+                Wissenschaft wurden durch die Begegnung mit neuen Kulturen und
+                Ideen beeinflusst.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -300,15 +354,17 @@
             </svg>
           </div>
         </div>
-        <div class="content-section">
-          <div class="section-text">
-            Schlussendlich kann man Kolumbus nicht einfach zu einem Verbrecher
-            oder Held erklären. Es kommt dort sehr stark auf die Position des
-            Betrachters an. Für die Indigenen war die Entdeckung Amerikas der
-            Anfang vom Ende. Das bedeutete zum Beispiel die Auslöschung fast
-            aller indigenen Kulturen. Für die Europäer eröffnete es eine
-            komplett neue Welt und Chancen sich und sein Land zu stärken und zu
-            entwickeln. Die Entdeckung prägte beide Welten immens.
+        <div class="contents">
+          <div class="content-section">
+            <div class="section-text">
+              Schlussendlich kann man Kolumbus nicht einfach zu einem Verbrecher
+              oder Held erklären. Es kommt dort sehr stark auf die Position des
+              Betrachters an. Für die Indigenen war die Entdeckung Amerikas der
+              Anfang vom Ende. Das bedeutete zum Beispiel die Auslöschung fast
+              aller indigenen Kulturen. Für die Europäer eröffnete es eine
+              komplett neue Welt und Chancen sich und sein Land zu stärken und
+              zu entwickeln. Die Entdeckung prägte beide Welten immens.
+            </div>
           </div>
         </div>
       </div>
