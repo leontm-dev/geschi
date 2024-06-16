@@ -7,7 +7,7 @@ body {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
-  overflow-x: scroll;
+  overflow-x: hidden;
   overflow-y: hidden;
   display: flex;
   flex-direction: row;
@@ -43,8 +43,9 @@ section {
   background-color: whitesmoke;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
-  overflow-y: clip;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
 }
 .content-top {
   width: 90%;
@@ -74,15 +75,21 @@ section {
 .content-close:hover {
   cursor: pointer;
 }
-.content-section {
+.contents {
+  height: 70%;
   width: 90%;
-  margin: 10px 5%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  overflow-x: scroll;
+  position: relative;
+}
+.content-section {
+  width: 100%;
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
 }
 .section-text {
   width: 59%;
@@ -97,7 +104,6 @@ section {
   }
 }
 .section-img {
-  min-width: 300px;
   width: 40%;
   display: flex;
   justify-content: center;
